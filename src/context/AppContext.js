@@ -39,7 +39,7 @@ function AppProvider({ children }) {
       },
       {
         name: "Core only",
-        numExercises: partOfDay === "PM" ? 5 : 4,
+        numExercises: partOfDay === "AM" ? 5 : 4,
       },
     ]
   }, [partOfDay]);

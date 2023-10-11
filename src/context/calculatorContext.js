@@ -1,4 +1,5 @@
 import { createContext, useContext, useMemo, useReducer } from "react";
+import { useApp } from "./AppContext";
 
 const CalculatorContext = createContext();
 
@@ -21,9 +22,9 @@ const reducer = function (state, action) {
 }
 
 function CalculatorProvider({ children }) {
+  const { workouts } = useApp();
   const initialState = {
-    // number: workouts.at(0).numExercises,
-    number: 0,
+    number: workouts.at(0).numExercises,
     sets: 3,
     speed: 90,
     durationBreak: 5
