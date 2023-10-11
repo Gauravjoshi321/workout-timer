@@ -1,5 +1,6 @@
 import { useCalulator } from './context/calculatorContext';
 import { useApp } from './context/AppContext';
+import { memo } from 'react';
 // import clickSound from './ClickSound.m4a';
 
 function Calculator() {
@@ -74,4 +75,4 @@ function Calculator() {
   );
 }
 
-export default Calculator;
+export default memo(Calculator);
