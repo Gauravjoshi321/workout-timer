@@ -5,7 +5,7 @@ import { memo } from 'react';
 
 function Calculator() {
   const { number, sets, speed, durationBreak, mins, seconds, dispatch } = useCalulator();
-  const { workouts, allowSound } = useApp();
+  const { workouts } = useApp();
 
   // const playSound = function () {
   //   if (!allowSound) return;
